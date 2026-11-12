@@ -559,7 +559,6 @@ async def start_background_scanner() -> None:
     asyncio.create_task(loop())
 
 
-@app.get("/")
 @app.get("/health")
 @app.get("/api/ping")
 async def health_check() -> Dict[str, Any]:
